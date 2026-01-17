@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pro To-Do App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+<main class="app">
+  <h1>📝 Task Manager</h1>
+
+  <form id="todo-form">
+    <input id="todo-input" placeholder="Task title" required>
+    <input id="deadline-input" type="datetime-local" required>
+    <button>Add</button>
+  </form>
+
+  <div class="filters">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="active">Active</button>
+    <button data-filter="completed">Completed</button>
+  </div>
+
+  <ul id="todo-list"></ul>
+</main>
+
+<script src="script4.js"></script>
+</body>
+</html>
